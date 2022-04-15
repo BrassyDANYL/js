@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <title>Document</title>
+</head>
+<body>
+   <header>
+   <div class="progress">
+      <img class="paw" id="paw" src="img/paw.png" alt="paw">
+   </div>
+      <h1>BALLOONS</h1>
+   
+   </header>
+   <div class="container">
+
+
+      <div class="balloon__block wow bounceInUp">
+      <button onclick="boomBalloon()" id="balloon" class="balloon__button wow bounceInUp">
+         <img id="balloon__img" src="img/balloon.png" alt="balloon" class="balloon wow bounceInUp">
+      </button>
+   </div>
+
+   <div id="coupon" class="coupon">
+      <h2>ВІТАЄМО!!!</h2>
+      <h3>Вам доступний купон</h3>
+      <p>на суму 200 грн</p>
+      <button onclick="hideCoupon()" >Активувати</button>
+      <h4>Код купону:123098</h4>
+   </div>
+   <ul class="buttons">
+      <li class="button all" data-filter="all" tabindex="-1">All posts</li>
+      <li class="button green" data-filter="green" tabindex="-2">Green posts</li>
+      <li class="button blue" data-filter="blue" tabindex="-3">Blue posts</li>
+      <li class="button red" data-filter="red" tabindex="-4">Red posts</li>
+   </ul>
+   <div class="content red"></div>
+   <div class="content blue"></div>
+   <div class="content green"></div>
+   <div class="content red"></div>
+   <div class="content blue"></div>
+   <div class="content green"></div>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+   <script src="js/script.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+</body>
+</html>
